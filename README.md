@@ -1,26 +1,11 @@
-1. Project Description
-   # DeepFER
+# DeepFER — Deepfake Image Classification
 
-DeepFER is a Deep Learning-based DeepFake Detection system that uses Convolutional Neural Networks (CNN) to classify images or video frames as Real or Fake. The model is trained on facial datasets and aims to detect manipulated media with high accuracy.
-2. Features
-## Features
+A deep-learning project that explores classifying facial images as **real** or **fake** using a Convolutional Neural Network (CNN). The project is provided as a Jupyter Notebook.
 
-- Detects DeepFake images using CNN
-- Image preprocessing using OpenCV
-- Model training with TensorFlow/Keras
-- Predicts Real or Fake
-- Easy-to-use Jupyter Notebook implementation
-- 3. Dataset
-  4. ## Dataset
+## Project overview
 
-Dataset used: FaceForensics++, Celeb-DF, DeepFake Detection Challenge (DFDC), or your custom dataset.
+The notebook documents an image-classification workflow, including image preprocessing, model training, and prediction.
 
-Structure:
-
-dataset/
-│── real/
-│── fake/
-4. Technologies Used
 ## Technologies
 
 - Python
@@ -28,53 +13,40 @@ dataset/
 - OpenCV
 - NumPy
 - Matplotlib
-- Scikit-learn
-- 5. Installation
-  6. ## Installation
+- scikit-learn
+- Jupyter Notebook
 
-Clone the repository
+## Getting started
 
-```bash
-git clone https://github.com/yourusername/DeepFER.git
-Install dependencies
-pip install -r requirements.txt
+1. Clone the repository:
 
----
+   ```bash
+   git clone https://github.com/rlaharira/DeepFER.git
+   cd DeepFER
+   ```
 
-## 6. Usage
+2. Install the libraries used by the notebook (if they are not already available):
 
-```md
-## Usage
+   ```bash
+   pip install tensorflow opencv-python numpy matplotlib scikit-learn jupyter
+   ```
 
-Open the notebook
+3. Launch Jupyter and open the notebook:
 
-```bash
-jupyter notebook DeepFER_project.ipynb
-Run all cells to train or test the model
+   ```bash
+   jupyter notebook DeepFER_project.ipynb
+   ```
 
----
+4. Follow the notebook cells in order. Configure the dataset paths to match your local dataset before running the training and evaluation steps.
 
-## 7. Model Architecture
+## Dataset
 
-```md
-## CNN Architecture
+The notebook is intended to work with labeled real/fake facial-image data. Make sure you have the appropriate dataset and permission to use it; dataset files are not included in this repository.
 
-- Conv2D
-- MaxPooling2D
-- Conv2D
-- MaxPooling2D
-- Flatten
-- Dense
-- Dropout
-- Output Layer (Sigmoid)
-8. Results
-## Results
+## Notes
 
-Training Accuracy: 97.4%
+This is an experimental project. Model performance depends on the dataset, preprocessing, training setup, and evaluation method. Review the notebook outputs when assessing results.
 
-Validation Accuracy: 94.8%
+## Repository
 
-Test Accuracy: 93.6%
-
-
-- 
+[View the source code and notebook](https://github.com/rlaharira/DeepFER)
